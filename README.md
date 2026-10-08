@@ -4,7 +4,7 @@ Modern football identity database, career encyclopedia, transfer tracker, compar
 
 ## Run Locally
 
-This project uses Neon PostgreSQL so the same database works locally and on Vercel. Create a Neon project, then copy the pooled connection string into `DATABASE_URL` and the direct (non-pooled) connection string into `DIRECT_URL` in `.env`. For Prisma 5, include `pgbouncer=true` in the pooled URL. Keep the credentials private.
+This project uses Neon PostgreSQL so the same database works locally and on Vercel. Create/link a Neon project, then set `DATABASE_URL` to the pooled connection string and `DATABASE_URL_UNPOOLED` to the direct (non-pooled) connection string in `.env`. Keep the credentials private.
 
 ```bash
 npm install
@@ -14,7 +14,7 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-`npm run db:setup` generates the Prisma client, creates/updates the PostgreSQL schema, and seeds the sample records. It is safe to run more than once. `DATABASE_URL` should use Neon's pooled connection string (with `pgbouncer=true`) for the app; `DIRECT_URL` should use the direct connection string for Prisma schema operations. The sample dataset is intentionally small and is for local evaluation, not a complete or live football data feed.
+`npm run db:setup` generates the Prisma client, creates/updates the PostgreSQL schema, and seeds the sample records. It is safe to run more than once. `DATABASE_URL` should use Neon's pooled connection string for the app; Prisma uses `DATABASE_URL_UNPOOLED` for schema operations. The Neon CLI link command supplies both variables automatically. The sample dataset is intentionally small and is for local evaluation, not a complete or live football data feed.
 
 ## GitHub and Vercel Deployment
 
@@ -33,7 +33,7 @@ Open `http://localhost:3000`.
 2. In Vercel, import the GitHub repository as a Next.js project.
 3. Add these environment variables in Vercel project settings for every environment you deploy:
    - `DATABASE_URL`: Neon pooled connection string.
-   - `DIRECT_URL`: Neon direct connection string.
+   - `DATABASE_URL_UNPOOLED`: Neon direct (non-pooled) connection string. The Vercel Neon integration may provide this automatically; check the exact variable name in Project Settings.
    - `JWT_SECRET`: a unique random secret with at least 32 characters.
    - `ADMIN_API_KEY`: a long random secret if you use admin import/sync features.
    - `FOOTBALL_API_BASE_URL` and `FOOTBALL_API_KEY` only if a licensed football data provider is configured.
@@ -66,6 +66,6 @@ The app is seeded only with a small verified starter dataset and metadata fields
 
 ## Database
 
-Prisma uses PostgreSQL. `DATABASE_URL` is the pooled runtime connection and `DIRECT_URL` is the direct connection for Prisma CLI operations such as `db push`. Run `npm run db:setup` after configuring both URLs to create the schema and load the starter data.
+Prisma uses PostgreSQL. `DATABASE_URL` is the pooled runtime connection and `DATABASE_URL_UNPOOLED` is the direct connection for Prisma CLI operations such as `db push`. Run `npm run db:setup` after configuring both URLs to create the schema and load the starter data.
 
 See [docs/ERD.md](docs/ERD.md) and [docs/API.md](docs/API.md).
