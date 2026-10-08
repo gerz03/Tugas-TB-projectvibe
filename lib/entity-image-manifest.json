@@ -1,0 +1,548 @@
+{
+  "provider": "FotMob",
+  "players": {
+    "Alisson Becker": {
+      "fotmobName": "Alisson Becker",
+      "fotmobId": "319784",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/319784.png",
+      "url": "/images/players/alisson-becker.png",
+      "bytes": 22719
+    },
+    "Bruno Fernandes": {
+      "fotmobName": "Bruno Fernandes",
+      "fotmobId": "422685",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/422685.png",
+      "url": "/images/players/bruno-fernandes.png",
+      "bytes": 17930
+    },
+    "Antoine Griezmann": {
+      "fotmobName": "Antoine Griezmann",
+      "fotmobId": "184138",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/184138.png",
+      "url": "/images/players/antoine-griezmann.png",
+      "bytes": 13573
+    },
+    "Bukayo Saka": {
+      "fotmobName": "Bukayo Saka",
+      "fotmobId": "961995",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/961995.png",
+      "url": "/images/players/bukayo-saka.png",
+      "bytes": 20702
+    },
+    "Cristiano Ronaldo": {
+      "fotmobName": "Cristiano Ronaldo",
+      "fotmobId": "30893",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/30893.png",
+      "url": "/images/players/cristiano-ronaldo.png",
+      "bytes": 11783
+    },
+    "Erling Haaland": {
+      "fotmobName": "Erling Haaland",
+      "fotmobId": "737066",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/737066.png",
+      "url": "/images/players/erling-haaland.png",
+      "bytes": 19872
+    },
+    "Cole Palmer": {
+      "fotmobName": "Cole Palmer",
+      "fotmobId": "1096353",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/1096353.png",
+      "url": "/images/players/cole-palmer.png",
+      "bytes": 19340
+    },
+    "David Beckham": {
+      "fotmobName": "David Beckham",
+      "fotmobId": "30612",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/30612.png",
+      "url": "/images/players/david-beckham.png",
+      "bytes": 18338
+    },
+    "Florian Wirtz": {
+      "fotmobName": "Florian Wirtz",
+      "fotmobId": "1152455",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/1152455.png",
+      "url": "/images/players/florian-wirtz.png",
+      "bytes": 12542
+    },
+    "Jamal Musiala": {
+      "fotmobName": "Jamal Musiala",
+      "fotmobId": "1156141",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/1156141.png",
+      "url": "/images/players/jamal-musiala.png",
+      "bytes": 12095
+    },
+    "Harry Kane": {
+      "fotmobName": "Harry Kane",
+      "fotmobId": "194165",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/194165.png",
+      "url": "/images/players/harry-kane.png",
+      "bytes": 12083
+    },
+    "Lamine Yamal": {
+      "fotmobName": "Lamine Yamal",
+      "fotmobId": "1467236",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/1467236.png",
+      "url": "/images/players/lamine-yamal.png",
+      "bytes": 22689
+    },
+    "Kevin De Bruyne": {
+      "fotmobName": "Kevin De Bruyne",
+      "fotmobId": "169200",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/169200.png",
+      "url": "/images/players/kevin-de-bruyne.png",
+      "bytes": 19528
+    },
+    "Jude Bellingham": {
+      "fotmobName": "Jude Bellingham",
+      "fotmobId": "1077894",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/1077894.png",
+      "url": "/images/players/jude-bellingham.png",
+      "bytes": 12031
+    },
+    "Kylian Mbappe": {
+      "fotmobName": "Kylian Mbappé",
+      "fotmobId": "701154",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/701154.png",
+      "url": "/images/players/kylian-mbappe.png",
+      "bytes": 10970
+    },
+    "Lautaro Martinez": {
+      "fotmobName": "Lautaro Martínez",
+      "fotmobId": "690230",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/690230.png",
+      "url": "/images/players/lautaro-martinez.png",
+      "bytes": 11718
+    },
+    "Lionel Messi": {
+      "fotmobName": "Lionel Messi",
+      "fotmobId": "30981",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/30981.png",
+      "url": "/images/players/lionel-messi.png",
+      "bytes": 18774
+    },
+    "Marcus Rashford": {
+      "fotmobName": "Marcus Rashford",
+      "fotmobId": "696365",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/696365.png",
+      "url": "/images/players/marcus-rashford.png",
+      "bytes": 20061
+    },
+    "Luka Modric": {
+      "fotmobName": "Luka Modrić",
+      "fotmobId": "31097",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/31097.png",
+      "url": "/images/players/luka-modric.png",
+      "bytes": 15799
+    },
+    "Mohamed Salah": {
+      "fotmobName": "Mohamed Salah",
+      "fotmobId": "292462",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/292462.png",
+      "url": "/images/players/mohamed-salah.png",
+      "bytes": 18932
+    },
+    "Martin Odegaard": {
+      "fotmobName": "Martin Ødegaard",
+      "fotmobId": "534670",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/534670.png",
+      "url": "/images/players/martin-odegaard.png",
+      "bytes": 12135
+    },
+    "Neymar Jr": {
+      "fotmobName": "Neymar",
+      "fotmobId": "19533",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/19533.png",
+      "url": "/images/players/neymar-jr.png",
+      "bytes": 20470
+    },
+    "Rafael Leao": {
+      "fotmobName": "Rafael Leão",
+      "fotmobId": "848844",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/848844.png",
+      "url": "/images/players/rafael-leao.png",
+      "bytes": 10858
+    },
+    "Pratama Arhan": {
+      "fotmobName": "Pratama Arhan",
+      "fotmobId": "1259022",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/1259022.png",
+      "url": "/images/players/pratama-arhan.png",
+      "bytes": 17810
+    },
+    "Nicolo Barella": {
+      "fotmobName": "Nicolò Barella",
+      "fotmobId": "541820",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/541820.png",
+      "url": "/images/players/nicolo-barella.png",
+      "bytes": 12179
+    },
+    "Robert Lewandowski": {
+      "fotmobName": "Robert Lewandowski",
+      "fotmobId": "93447",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/93447.png",
+      "url": "/images/players/robert-lewandowski.png",
+      "bytes": 18170
+    },
+    "Rodri": {
+      "fotmobName": "Rodri",
+      "fotmobId": "675088",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/675088.png",
+      "url": "/images/players/rodri.png",
+      "bytes": 18260
+    },
+    "Ronaldinho": {
+      "fotmobName": "Ronaldinho",
+      "fotmobId": "30743",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/30743.png",
+      "url": "/images/players/ronaldinho.png",
+      "bytes": 17838
+    },
+    "Toni Kroos": {
+      "fotmobName": "Toni Kroos",
+      "fotmobId": "95078",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/95078.png",
+      "url": "/images/players/toni-kroos.png",
+      "bytes": 12077
+    },
+    "Thibaut Courtois": {
+      "fotmobName": "Thibaut Courtois",
+      "fotmobId": "170323",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/170323.png",
+      "url": "/images/players/thibaut-courtois.png",
+      "bytes": 19386
+    },
+    "Vinicius Junior": {
+      "fotmobName": "Vinícius Júnior",
+      "fotmobId": "846033",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/846033.png",
+      "url": "/images/players/vinicius-junior.png",
+      "bytes": 18696
+    },
+    "Virgil van Dijk": {
+      "fotmobName": "Virgil van Dijk",
+      "fotmobId": "209405",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/209405.png",
+      "url": "/images/players/virgil-van-dijk.png",
+      "bytes": 11573
+    },
+    "William Saliba": {
+      "fotmobName": "William Saliba",
+      "fotmobId": "955406",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/955406.png",
+      "url": "/images/players/william-saliba.png",
+      "bytes": 11732
+    },
+    "Son Heung-min": {
+      "fotmobName": "Heung-Min Son",
+      "fotmobId": "212867",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/212867.png",
+      "url": "/images/players/son-heung-min.png",
+      "bytes": 18162
+    },
+    "Zinedine Zidane": {
+      "fotmobName": "Zinédine Zidane",
+      "fotmobId": "38422",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/38422.png",
+      "url": "/images/players/zinedine-zidane.png",
+      "bytes": 19228
+    },
+    "Steven Gerrard": {
+      "fotmobName": "Steven Gerrard",
+      "fotmobId": "30618",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/30618.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/players/steven-gerrard.png",
+      "bytes": 21104
+    },
+    "Ronaldo Nazario": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:12.12.2025_%E2%80%93_Cerim%C3%B4nia_de_lan%C3%A7amento_do_SBT_News_-_54980664160_%28cropped2%29.jpg",
+      "sourceProvider": "Wikimedia Commons",
+      "credit": "Lula Oficial",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "url": "/images/players/ronaldo-nazario.jpg",
+      "bytes": 42326
+    },
+    "Wayne Rooney": {
+      "fotmobName": "Wayne Rooney",
+      "fotmobId": "30829",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/30829.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/players/wayne-rooney.png",
+      "bytes": 13531
+    },
+    "Rizky Ridho": {
+      "fotmobName": "Rizky Ridho",
+      "fotmobId": "1261179",
+      "sourceUrl": "https://images.fotmob.com/image_resources/playerimages/1261179.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/players/rizky-ridho.png",
+      "bytes": 19579
+    },
+    "Paolo Maldini": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paolo_Maldini_AC_Milan_Technical_director_2018.jpg",
+      "sourceProvider": "Wikimedia Commons",
+      "credit": "GOAL TV",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "url": "/images/players/paolo-maldini.jpg",
+      "bytes": 27911
+    }
+  },
+  "clubs": {
+    "AC Milan": {
+      "fotmobName": "Milan",
+      "fotmobId": "8564",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png",
+      "url": "/images/clubs/ac-milan.png",
+      "bytes": 9580
+    },
+    "AFC Ajax": {
+      "fotmobName": "Ajax",
+      "fotmobId": "8593",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8593.png",
+      "url": "/images/clubs/afc-ajax.png",
+      "bytes": 32114
+    },
+    "Al-Hilal": {
+      "fotmobName": "Al Hilal",
+      "fotmobId": "2529",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/2529.png",
+      "url": "/images/clubs/al-hilal.png",
+      "bytes": 3246
+    },
+    "Al-Nassr": {
+      "fotmobName": "Al Nassr FC",
+      "fotmobId": "101918",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/101918.png",
+      "url": "/images/clubs/al-nassr.png",
+      "bytes": 10686
+    },
+    "Barcelona": {
+      "fotmobName": "Barcelona",
+      "fotmobId": "8634",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
+      "url": "/images/clubs/barcelona.png",
+      "bytes": 9230
+    },
+    "Atletico Madrid": {
+      "fotmobName": "Atlético Madrid",
+      "fotmobId": "9906",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
+      "url": "/images/clubs/atletico-madrid.png",
+      "bytes": 4809
+    },
+    "Bayer Leverkusen": {
+      "fotmobName": "Bayer Leverkusen",
+      "fotmobId": "8178",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8178.png",
+      "url": "/images/clubs/bayer-leverkusen.png",
+      "bytes": 16181
+    },
+    "Bayern Munich": {
+      "fotmobName": "Bayern München",
+      "fotmobId": "9823",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9823.png",
+      "url": "/images/clubs/bayern-munich.png",
+      "bytes": 11558
+    },
+    "Boca Juniors": {
+      "fotmobName": "Boca Juniors",
+      "fotmobId": "10077",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10077.png",
+      "url": "/images/clubs/boca-juniors.png",
+      "bytes": 10871
+    },
+    "Como": {
+      "fotmobName": "Como",
+      "fotmobId": "10171",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10171.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/clubs/como.png",
+      "bytes": 8681
+    },
+    "Brighton & Hove Albion": {
+      "fotmobName": "Brighton & Hove Albion",
+      "fotmobId": "10204",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10204.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/clubs/brighton-and-hove-albion.png",
+      "bytes": 11929
+    },
+    "Nottingham Forest": {
+      "fotmobName": "Nottingham Forest",
+      "fotmobId": "10203",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10203.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/clubs/nottingham-forest.png",
+      "bytes": 16408
+    },
+    "Newcastle United": {
+      "fotmobName": "Newcastle United",
+      "fotmobId": "10261",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/clubs/newcastle-united.png",
+      "bytes": 15623
+    },
+    "Dewa United": {
+      "fotmobName": "Dewa United FC",
+      "fotmobId": "585860",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/585860.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/clubs/dewa-united.png",
+      "bytes": 15629
+    },
+    "Aston Villa": {
+      "fotmobName": "Aston Villa",
+      "fotmobId": "10252",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10252.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/clubs/aston-villa.png",
+      "bytes": 9457
+    },
+    "Al-Ittihad": {
+      "fotmobName": "Al Ittihad",
+      "fotmobId": "8577",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8577.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/clubs/al-ittihad.png",
+      "bytes": 7193
+    },
+    "Persija Jakarta": {
+      "fotmobName": "Persija Jakarta",
+      "fotmobId": "165191",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/165191.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/clubs/persija-jakarta.png",
+      "bytes": 11877
+    },
+    "Tottenham Hotspur": {
+      "fotmobName": "Tottenham Hotspur",
+      "fotmobId": "8586",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
+      "url": "/images/clubs/tottenham-hotspur.png",
+      "bytes": 5827
+    },
+    "Borussia Dortmund": {
+      "fotmobName": "Borussia Dortmund",
+      "fotmobId": "9789",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9789.png",
+      "url": "/images/clubs/borussia-dortmund.png",
+      "bytes": 9731
+    },
+    "Chelsea": {
+      "fotmobName": "Chelsea",
+      "fotmobId": "8455",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png",
+      "url": "/images/clubs/chelsea.png",
+      "bytes": 14003
+    },
+    "Flamengo": {
+      "fotmobName": "Flamengo",
+      "fotmobId": "9770",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9770.png",
+      "url": "/images/clubs/flamengo.png",
+      "bytes": 6014
+    },
+    "Arsenal": {
+      "fotmobName": "Arsenal",
+      "fotmobId": "9825",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
+      "url": "/images/clubs/arsenal.png",
+      "bytes": 10904
+    },
+    "Inter Miami": {
+      "fotmobName": "Inter Miami CF",
+      "fotmobId": "960720",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/960720.png",
+      "url": "/images/clubs/inter-miami.png",
+      "bytes": 9711
+    },
+    "Inter Milan": {
+      "fotmobName": "Inter",
+      "fotmobId": "8636",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
+      "url": "/images/clubs/inter-milan.png",
+      "bytes": 16204
+    },
+    "Liverpool": {
+      "fotmobName": "Liverpool",
+      "fotmobId": "8650",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
+      "url": "/images/clubs/liverpool.png",
+      "bytes": 8439
+    },
+    "LA Galaxy": {
+      "fotmobName": "LA Galaxy",
+      "fotmobId": "6637",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/6637.png",
+      "sourceProvider": "FotMob",
+      "url": "/images/clubs/la-galaxy.png",
+      "bytes": 9177
+    },
+    "Manchester City": {
+      "fotmobName": "Manchester City",
+      "fotmobId": "8456",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
+      "url": "/images/clubs/manchester-city.png",
+      "bytes": 14739
+    },
+    "Juventus": {
+      "fotmobName": "Juventus",
+      "fotmobId": "9885",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png",
+      "url": "/images/clubs/juventus.png",
+      "bytes": 3765
+    },
+    "Manchester United": {
+      "fotmobName": "Manchester United",
+      "fotmobId": "10260",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png",
+      "url": "/images/clubs/manchester-united.png",
+      "bytes": 18765
+    },
+    "Paris Saint-Germain": {
+      "fotmobName": "Paris Saint-Germain",
+      "fotmobId": "9847",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9847.png",
+      "url": "/images/clubs/paris-saint-germain.png",
+      "bytes": 14231
+    },
+    "Persib Bandung": {
+      "fotmobName": "Persib Bandung",
+      "fotmobId": "165196",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/165196.png",
+      "url": "/images/clubs/persib-bandung.png",
+      "bytes": 9205
+    },
+    "Real Madrid": {
+      "fotmobName": "Real Madrid",
+      "fotmobId": "8633",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
+      "url": "/images/clubs/real-madrid.png",
+      "bytes": 9013
+    },
+    "River Plate": {
+      "fotmobName": "River Plate",
+      "fotmobId": "10076",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10076.png",
+      "url": "/images/clubs/river-plate.png",
+      "bytes": 11967
+    },
+    "SL Benfica": {
+      "fotmobName": "Benfica",
+      "fotmobId": "9772",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9772.png",
+      "url": "/images/clubs/sl-benfica.png",
+      "bytes": 14773
+    },
+    "Sporting CP": {
+      "fotmobName": "Sporting CP",
+      "fotmobId": "9768",
+      "sourceUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9768.png",
+      "url": "/images/clubs/sporting-cp.png",
+      "bytes": 11835
+    }
+  }
+}

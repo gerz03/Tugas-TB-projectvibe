@@ -1,0 +1,407 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Country {
+  country_id   String   @id @default(cuid())
+  country_name String   @unique
+  country_code String   @unique
+  flag         String?
+  continent    String
+  fifa_code    String?  @unique
+  source       String?
+  source_id    String?
+  last_updated DateTime @default(now())
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  leagues League[]
+  clubs   Club[]
+  players Player[] @relation("PlayerNationality")
+
+  @@map("countries")
+}
+
+model League {
+  league_id    String   @id @default(cuid())
+  league_name  String
+  country_id   String?
+  country      Country? @relation(fields: [country_id], references: [country_id])
+  logo         String?
+  founded      Int?
+  level        String?
+  season       String?
+  source       String?
+  source_id    String?
+  last_updated DateTime @default(now())
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  clubs        Club[]
+  competitions Competition[]
+  players      Player[]
+
+  @@unique([league_name, country_id, season])
+  @@map("leagues")
+}
+
+model Competition {
+  competition_id String   @id @default(cuid())
+  competition_name String
+  type           String
+  country_id     String?
+  league_id      String?
+  season         String?
+  logo           String?
+  source         String?
+  source_id      String?
+  last_updated   DateTime @default(now())
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+
+  league League? @relation(fields: [league_id], references: [league_id])
+
+  @@unique([competition_name, season])
+  @@map("competitions")
+}
+
+model Club {
+  club_id          String     @id @default(cuid())
+  official_name    String
+  common_name      String
+  short_name       String?
+  country_id       String?
+  country_name     String?
+  city             String?
+  founded          Int?
+  stadium          String?
+  stadium_capacity Int?
+  manager          String?
+  president        String?
+  league_id        String?
+  logo             String?
+  primary_color    String?
+  secondary_color  String?
+  website          String?
+  description      String?
+  club_status      String     @default("ACTIVE")
+  source           String?
+  source_id        String?
+  last_updated     DateTime   @default(now())
+  created_at       DateTime   @default(now())
+  updated_at       DateTime   @updatedAt
+
+  country Country? @relation(fields: [country_id], references: [country_id])
+  league  League?  @relation(fields: [league_id], references: [league_id])
+  players Player[]
+  careers PlayerCareer[]
+  statistics ClubStatistic[]
+  honours Honour[]
+  trophies Trophy[]
+  transfersFrom Transfer[] @relation("TransferFrom")
+  transfersTo   Transfer[] @relation("TransferTo")
+
+  @@unique([official_name, country_id])
+  @@map("clubs")
+}
+
+model Player {
+  player_id             String       @id @default(cuid())
+  full_name             String
+  common_name           String
+  first_name            String?
+  last_name             String?
+  nationality_id        String?
+  nationality           String?
+  second_nationality    String?
+  date_of_birth         DateTime?
+  age                   Int?
+  place_of_birth        String?
+  height                Int?
+  weight                Int?
+  preferred_foot        String?
+  position              String?
+  secondary_position    String?
+  shirt_number          Int?
+  current_club_id       String?
+  current_league_id     String?
+  current_national_team String?
+  market_value          Int?
+  contract_start        DateTime?
+  contract_end          DateTime?
+  profile_photo         String?
+  biography             String?
+  career_status         String       @default("UNKNOWN")
+  popularity            Int          @default(50)
+  source                String?
+  source_id             String?
+  last_updated          DateTime     @default(now())
+  created_at            DateTime     @default(now())
+  updated_at            DateTime     @updatedAt
+
+  country Country? @relation("PlayerNationality", fields: [nationality_id], references: [country_id])
+  current_club Club? @relation(fields: [current_club_id], references: [club_id])
+  current_league League? @relation(fields: [current_league_id], references: [league_id])
+  careers PlayerCareer[]
+  statistics PlayerStatistic[]
+  transfers Transfer[]
+  honours Honour[]
+
+  @@unique([full_name, date_of_birth])
+  @@index([common_name])
+  @@map("players")
+}
+
+model PlayerCareer {
+  career_id      String       @id @default(cuid())
+  player_id      String
+  club_id        String
+  season         String?
+  start_date     DateTime?
+  end_date       DateTime?
+  competition    String?
+  position       String?
+  shirt_number   Int?
+  appearances    Int          @default(0)
+  goals          Int          @default(0)
+  assists        Int          @default(0)
+  minutes_played Int          @default(0)
+  loan_status    String       @default("NONE")
+  transfer_type  String       @default("UNKNOWN")
+  source         String?
+  source_id      String?
+  last_updated   DateTime     @default(now())
+  created_at     DateTime     @default(now())
+  updated_at     DateTime     @updatedAt
+
+  player Player @relation(fields: [player_id], references: [player_id], onDelete: Cascade)
+  club   Club   @relation(fields: [club_id], references: [club_id])
+
+  @@index([player_id, start_date])
+  @@map("player_career")
+}
+
+model PlayerStatistic {
+  stat_id         String   @id @default(cuid())
+  player_id       String
+  club_id         String?
+  season          String
+  competition     String
+  team_type       String   @default("club")
+  appearances     Int?
+  starts          Int?
+  minutes_played  Int?
+  goals           Int?
+  assists         Int?
+  yellow_cards    Int?
+  red_cards       Int?
+  clean_sheets    Int?
+  shots           Int?
+  shots_on_target Int?
+  passes          Int?
+  key_passes      Int?
+  tackles         Int?
+  interceptions   Int?
+  duels_won       Int?
+  dribbles        Int?
+  penalties       Int?
+  own_goals       Int?
+  fouls           Int?
+  source          String?
+  source_id       String?
+  last_updated    DateTime @default(now())
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+
+  player Player @relation(fields: [player_id], references: [player_id], onDelete: Cascade)
+
+  @@unique([player_id, club_id, season, competition, team_type])
+  @@map("player_statistics")
+}
+
+model ClubStatistic {
+  stat_id       String   @id @default(cuid())
+  club_id       String
+  season        String
+  competition   String
+  matches       Int      @default(0)
+  wins          Int      @default(0)
+  draws         Int      @default(0)
+  losses        Int      @default(0)
+  goals_for     Int      @default(0)
+  goals_against Int      @default(0)
+  clean_sheets  Int      @default(0)
+  trophies      Int      @default(0)
+  league_position Int?
+  source        String?
+  source_id     String?
+  last_updated  DateTime @default(now())
+
+  club Club @relation(fields: [club_id], references: [club_id], onDelete: Cascade)
+
+  @@unique([club_id, season, competition])
+  @@map("club_statistics")
+}
+
+model Transfer {
+  transfer_id     String       @id @default(cuid())
+  player_id       String
+  from_club_id    String
+  to_club_id      String
+  transfer_date   DateTime?
+  season          String?
+  transfer_type   String       @default("UNKNOWN")
+  transfer_fee    Int?
+  loan            Boolean      @default(false)
+  contract_length String?
+  source          String?
+  source_id       String?
+  last_updated    DateTime     @default(now())
+  created_at      DateTime     @default(now())
+  updated_at      DateTime     @updatedAt
+
+  player   Player @relation(fields: [player_id], references: [player_id], onDelete: Cascade)
+  fromClub Club   @relation("TransferFrom", fields: [from_club_id], references: [club_id])
+  toClub   Club   @relation("TransferTo", fields: [to_club_id], references: [club_id])
+
+  @@index([player_id, transfer_date])
+  @@map("transfers")
+}
+
+model User {
+  user_id         String   @id @default(cuid())
+  username        String   @unique
+  email           String   @unique
+  password_hash   String
+  profile_photo   String?
+  total_score     Int      @default(0)
+  games_played    Int      @default(0)
+  correct_answers Int      @default(0)
+  wrong_answers   Int      @default(0)
+  accuracy        Float    @default(0)
+  highest_streak  Int      @default(0)
+  favorite_club_id String?
+  favorite_player_id String?
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+
+  sessions GameSession[]
+  achievements UserAchievement[]
+
+  @@map("users")
+}
+
+model GameSession {
+  session_id      String     @id @default(cuid())
+  user_id         String?
+  username        String     @default("Guest")
+  mode            String
+  difficulty      String
+  active_question_no Int      @default(1)
+  score           Int        @default(0)
+  current_streak  Int        @default(0)
+  highest_streak  Int        @default(0)
+  total_questions Int        @default(20)
+  correct_answers Int        @default(0)
+  wrong_answers   Int        @default(0)
+  seed            String
+  started_at      DateTime   @default(now())
+  question_started_at DateTime?
+  completed_at    DateTime?
+
+  user User? @relation(fields: [user_id], references: [user_id])
+  answers GameAnswer[]
+
+  @@map("game_sessions")
+}
+
+model GameAnswer {
+  answer_id       String   @id @default(cuid())
+  session_id      String
+  question_no     Int
+  mode            String
+  player_id       String?
+  club_id         String?
+  correct_ref_id  String
+  selected_ref_id String?
+  is_correct      Boolean
+  points_delta    Int
+  time_ms         Int
+  server_seed     String
+  answered_at     DateTime @default(now())
+
+  session GameSession @relation(fields: [session_id], references: [session_id], onDelete: Cascade)
+
+  @@unique([session_id, question_no])
+  @@map("game_answers")
+}
+
+model Achievement {
+  achievement_id String @id @default(cuid())
+  code           String @unique
+  name           String
+  description    String
+  rule           String
+
+  users UserAchievement[]
+
+  @@map("achievements")
+}
+
+model UserAchievement {
+  user_achievement_id String   @id @default(cuid())
+  user_id             String
+  achievement_id      String
+  unlocked_at         DateTime @default(now())
+
+  user User @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  achievement Achievement @relation(fields: [achievement_id], references: [achievement_id])
+
+  @@unique([user_id, achievement_id])
+  @@map("user_achievements")
+}
+
+model Trophy {
+  trophy_id   String @id @default(cuid())
+  club_id     String
+  name        String
+  season      String?
+  competition String?
+
+  club Club @relation(fields: [club_id], references: [club_id], onDelete: Cascade)
+
+  @@map("trophies")
+}
+
+model Honour {
+  honour_id String @id @default(cuid())
+  player_id String?
+  club_id   String?
+  name      String
+  season    String?
+  type      String
+
+  player Player? @relation(fields: [player_id], references: [player_id])
+  club   Club?   @relation(fields: [club_id], references: [club_id])
+
+  @@map("honours")
+}
+
+model SyncLog {
+  sync_id       String   @id @default(cuid())
+  source        String
+  status        String
+  started_at    DateTime @default(now())
+  finished_at   DateTime?
+  records_seen  Int      @default(0)
+  records_changed Int    @default(0)
+  error_message String?
+
+  @@map("sync_logs")
+}
